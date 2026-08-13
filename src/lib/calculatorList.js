@@ -1,0 +1,51 @@
+export const CALCULATORS = [
+  {
+    path: "/sip",
+    name: "SIP Calculator",
+    short: "SIP",
+    icon: "📈",
+    description: "Monthly investments with step-up and inflation adjustment.",
+  },
+  {
+    path: "/lumpsum",
+    name: "Lumpsum Calculator",
+    short: "Lumpsum",
+    icon: "💰",
+    description: "One-time investment growth with inflation adjustment.",
+  },
+  {
+    path: "/fd",
+    name: "FD Calculator",
+    short: "FD",
+    icon: "🏦",
+    description: "Fixed deposit maturity with configurable compounding.",
+  },
+  {
+    path: "/emi",
+    name: "Home Loan EMI Calculator",
+    short: "EMI",
+    icon: "🏠",
+    description: "EMI, amortization schedule, and prepayment savings.",
+  },
+  {
+    path: "/rd",
+    name: "RD Calculator",
+    short: "RD",
+    icon: "🗓️",
+    description: "Recurring deposit maturity value.",
+  },
+  {
+    path: "/ppf",
+    name: "PPF Calculator",
+    short: "PPF",
+    icon: "🛡️",
+    description: "Public Provident Fund growth over the years.",
+  },
+  {
+    path: "/compound-interest",
+    name: "Compound Interest Calculator",
+    short: "CI",
+    icon: "🧮",
+    description: "General compound interest with optional contributions.",
+  },
+];
