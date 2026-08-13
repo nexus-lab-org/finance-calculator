@@ -106,7 +106,7 @@ export default function EmiCalculator() {
 
   const results = (
     <>
-      <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-3">
         <StatCard label="Monthly EMI" value={result.emi} accentColor="var(--series-1)" large />
         <StatCard label="Total interest" value={result.totalInterest} accentColor="var(--series-2)" />
         <StatCard label="Total payment" value={result.totalPayment} accentColor="var(--series-2)" />

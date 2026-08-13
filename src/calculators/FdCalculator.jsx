@@ -68,10 +68,10 @@ export default function FdCalculator() {
 
   const results = (
     <>
-      <div className="grid grid-cols-2 sm:grid-cols-3 gap-3">
+      <div className="grid grid-cols-2 lg:grid-cols-3 gap-3">
         <StatCard label="Principal" value={result.principal} accentColor="var(--series-1)" />
         <StatCard label="Interest earned" value={result.interestEarned} accentColor="var(--series-2)" />
-        <StatCard label="Maturity value" value={result.maturityValue} accentColor="var(--series-2)" large />
+        <StatCard label="Maturity value" value={result.maturityValue} accentColor="var(--series-2)" large compact />
       </div>
 
       <Card>

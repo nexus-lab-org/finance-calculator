@@ -104,10 +104,10 @@ export default function SipCalculator() {
 
   const results = (
     <>
-      <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">
+      <div className="grid grid-cols-2 lg:grid-cols-4 gap-3">
         <StatCard label="Invested amount" value={result.totalInvested} accentColor="var(--series-1)" />
         <StatCard label="Est. returns" value={result.totalGain} accentColor="var(--series-2)" />
-        <StatCard label="Total value" value={result.totalValue} accentColor="var(--series-2)" large />
+        <StatCard label="Total value" value={result.totalValue} accentColor="var(--series-2)" large compact />
         {inflationEnabled && (
           <StatCard label="Inflation-adjusted value" value={result.realValue} accentColor="var(--series-3)" />
         )}

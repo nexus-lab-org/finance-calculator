@@ -1,10 +1,8 @@
 export function formatINR(value, { decimals = 0 } = {}) {
-  return new Intl.NumberFormat("en-IN", {
-    style: "currency",
-    currency: "INR",
-    maximumFractionDigits: decimals,
-    minimumFractionDigits: decimals,
-  }).format(value || 0);
+  // Built manually (rather than Intl's `style: "currency"`) so the ₹ glyph
+  // sits in the same text run as the digits — some Linux/Chrome font stacks
+  // fall back to a different font for the currency symbol otherwise.
+  return `₹${formatNumber(value, decimals)}`;
 }
 
 export function formatCompactINR(value) {
