@@ -40,6 +40,7 @@ export function calculateSIP({
         : corpus;
       yearly.push({
         year: yearNum,
+        monthlySip: round2(currentMonthlyInvestment),
         invested: round2(totalInvested),
         value: round2(corpus),
         gain: round2(corpus - totalInvested),

@@ -127,6 +127,9 @@ export default function SipCalculator() {
         <DataTable
           columns={[
             { key: "year", label: "Year" },
+            ...(stepUpEnabled
+              ? [{ key: "monthlySip", label: "Monthly SIP", format: "currency" }]
+              : []),
             { key: "invested", label: "Invested", format: "currency" },
             { key: "value", label: "Value", format: "currency" },
             { key: "gain", label: "Gain", format: "currency" },
