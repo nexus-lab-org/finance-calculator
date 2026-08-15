@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import { ThemeProvider } from "./lib/ThemeContext";
 import Layout from "./components/Layout";
 import Home from "./pages/Home";
@@ -13,7 +13,7 @@ import CompoundInterestCalculator from "./calculators/CompoundInterestCalculator
 export default function App() {
   return (
     <ThemeProvider>
-      <BrowserRouter>
+      <HashRouter>
         <Layout>
           <Routes>
             <Route path="/" element={<Home />} />
@@ -26,7 +26,7 @@ export default function App() {
             <Route path="/compound-interest" element={<CompoundInterestCalculator />} />
           </Routes>
         </Layout>
-      </BrowserRouter>
+      </HashRouter>
     </ThemeProvider>
   );
 }
